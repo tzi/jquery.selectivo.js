@@ -22,7 +22,7 @@
 
 .selectivo__label:focus,
 .selectivo__option:focus {
-    outline: none;
+    outline: 1px dotted gray;
 }
 
 .selectivo__label::-moz-focus-inner,
