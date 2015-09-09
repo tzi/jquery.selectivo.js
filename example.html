@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>selectivo.css example</title>
+    <meta name="viewport" content="initial-scale=1">
+
+    <link rel="stylesheet" href="selectivo.css" />
+</head>
+<body>
+    <span class="selectivo">
+        <button type="button" class="selectivo__label">Choice 1</button>
+        <input type="hidden" class="selectivo__input" />
+        <span class="selectivo__dropdown">
+            <button type="button" value="1" class="selectivo__option">Choice 1</button>
+            <button type="button" value="2" class="selectivo__option">Choice 2</button>
+            <button type="button" value="3" class="selectivo__option">Choice 3</button>
+        </span>
+    </span>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="selectivo.js"></script>
+    <script>
+        $(function(){
+            $('.selectivo').selectivo();
+        })
+    </script>
+</body>
+</html>

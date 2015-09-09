@@ -1,0 +1,58 @@
+.selectivo {
+    position: relative;
+    display: inline-block;
+    background: white;
+}
+
+.selectivo__label,
+.selectivo__option {
+    display: block;
+    width: 100%;
+    padding: 1em;
+    padding-right: 2.5em;
+    border: 0;
+    background: transparent;
+
+    color: inherit;
+    white-space: nowrap;
+
+    cursor: pointer;
+    outline: none;
+}
+
+.selectivo__label:focus,
+.selectivo__option:focus {
+    outline: none;
+}
+
+.selectivo__label::-moz-focus-inner,
+.selectivo__option::-moz-focus-inner {
+    border: 0;
+}
+
+.selectivo__label {
+    background: url('data:image/svg+xml,%3Csvg%20width%3D%2227%22%20height%3D%225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M0%200%20L5%205%20L9%200%20Z%22%20fill%3D%22%23696969%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E') no-repeat center right;
+}
+
+.selectivo__option:first-child  {
+    background: url('data:image/svg+xml,%3Csvg%20width%3D%2227%22%20height%3D%225%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M0%205%20L5%200%20L9%205%20Z%22%20fill%3D%22%23696969%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E') no-repeat center right;
+}
+
+.selectivo__label,
+.selectivo__dropdown {
+    border: 1px solid #E3E3E3;
+}
+
+.selectivo__dropdown {
+    display: none;
+
+    position: absolute;
+    z-index: 1;
+    top: 0; left: 0; right: 0;
+    overflow: hidden;
+    background: white;
+}
+
+.selectivo--open .selectivo__dropdown {
+    display: block;
+}
